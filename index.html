@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Newsletter Sign-up</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main-home">
+      <div class="home-view">
+        <img class="img-mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="img-desktop">
+        <section class="subscribe-sec">
+          <h1>Stay updated!</h1>
+          <p class="h2">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form id="form">
+            <div class="email-form">
+              <div class="spans-div">
+                <span class="input-desc">Email address</span>
+                <span class="span-req">Valid email required</span>
+              </div>
+              <input name="email" class="email-input required" type="email" placeholder="email@company.com"
+                oninput="emailValidation()" autocomplete="email">
+            </div>
+            <button id="submit-button" type="button">Subscribe to monthly newsletter</button>
+          </form>
+        </section>
+        <img class="img-desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="img-desktop">
+      </div>
+      <div class="thank-you-div">
+        <img src="../assets/images/icon-success.svg" class="thank-you-img">
+        <h2>Thanks for subscribing!</h2>
+
+        <p> A confirmation email has been sent to <span id="user-email"></span>.
+          Please open it and click the button inside to confirm your subscription.</p>
+
+        <button class="dismiss-button" onclick="location.reload()">Dismiss message</button>
+      </div>
+
+    </main>
+
+
+
+  </div>
+  <footer>
+    <p>Coded by <a class="coded-by" target="_blank" href="https://www.linkedin.com/in/lucca-sa/">Lucca Sá</a></p>
+
+  </footer>
+
+</body>
+<script src="./script.js"></script>
+<!-- <script src="./script-sucess.js"></script> -->
+
+</html>
